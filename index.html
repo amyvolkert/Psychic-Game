@@ -3,18 +3,30 @@
 <html lang="en-us">
 
 <head>
-
-  <meta charset="UTF-8">
-  <title>Letter Guess</title>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!-- <link rel="stylesheet" href="<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash|Slabo+27px" rel="stylesheet"> -->
+  	<meta charset="UTF-8">
+  	<title>Letter Guess</title>
+	<script src="../Psychic-Game/assets/javascript/game.js"></script>
+  <!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ -->
+  	<!-- <link rel="stylesheet" href="<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash|Slabo+27px" rel="stylesheet"> -->
   
 </head>
 
 <body>
-<script src="../assets/javascript/game.js">
-var guessWhichLetter = prompt"(Guess which letter I'm thinking of.")
-var 
-</script>
+	<section class="initiate">
+		<h1>Welcome to the Psychic Game!</h1>
+		<p>You'll have nine chances to bet me.<br><br>Good Luck!</p>
+	</section>
+
+	<!-- First bucket:
+		User chooses a-z 
+		Computer chooses a-z (at random)
+		Capture the choices
+		Compare the choices
+		Determine a win or loss
+		Determine how may choices left
+		Determine how many guesses so far (includes keys pressed) -->
+	<div id="game">
+		<p>Guess what letter I'm thinking of.<br><br>Press any letter to start playing!</p>
+    </div>
+    
