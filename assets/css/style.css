@@ -1,1 +1,15 @@
-.initiate
+.containter {
+	margin: auto;
+	max-width: 970px;
+}
+
+#background {
+	background-image: url(../images/ep_naturalblack.png);
+}
+
+h3 {
+	color: orange;
+	font-family: Inknut Antiqua;
+	font-size: 40px;
+	text-align: center;
+}
