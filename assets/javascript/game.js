@@ -4,20 +4,22 @@ var wins = 0;
 var guessesSoFar = 0;
 var guessesLeft = 9;
 var losses = 0;
-	/*First bucket:
-	User chooses a-z 
-	Computer chooses a-z (at random)
-	Capture the choices
-	Compare the choices
-	Determine a win or loss
+	
+	/*//Determine a win or loss
 	Determine how may choices left
 	Determine how many guesses so far (includes keys pressed)*/
 	
-	//User chooses a-z 
+	//User chooses a-z
+	var userGuess = [];
+	var keyPress;
+
 	document.onkeyup = function() { 
 
-		var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
-		console.log(userGuess);
+	var keyPress = String.fromCharCode(event.keyCode).toLowerCase();
+	
+	userGuess.push(keyPress);
+
+	console.log(userGuess);
 
 	//Computer chooses a-z (at random)
 	var computerGuess = options[Math.floor(Math.random() * options.length)];
