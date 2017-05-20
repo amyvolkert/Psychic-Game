@@ -27,5 +27,11 @@ h1 {
 	text-align: center;
 }
 
+#displayGuessesLeft {
+	color: #FF8C00;
+	font-family: Inknut Antiqua;
+	font-size: 30px;
+	text-align: center;
+}
 
 /*&nsbp */
