@@ -1,48 +1,83 @@
 
-var wins = 0;
+
 var guessesSoFar = 0;
-var guessesToStart = 9;
 var losses = 0;
 	
-	/*//Determine a win or loss
-	Determine how may choices left
-	Determine how many guesses so far (includes keys pressed)*/
+	//Computer chooses a-z (at random)
+	var options = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "w", "y", "z"];
+	var computerGuess = options[Math.floor(Math.random() * options.length)];
 	
+	console.log(computerGuess);
+
 	//User chooses a-z
 	var userGuess = [];
 	var keyPress;
-
-	document.onkeyup = function() { 
-
-	var keyPress = String.fromCharCode(event.keyCode).toLowerCase();
+	var wins = 0;
+	var guessesToStart = 9;
 	
-	userGuess.push(keyPress);
+	document.onkeyup = function() { 
+		keyPress = String.fromCharCode(event.keyCode).toLowerCase();
+		userGuess.push(keyPress);
+		console.log(userGuess)
+			//User guess does not equal computer guess
+			if (computerGuess!=keyPress) {
+			document.getElementById("displayGuessesSoFar").innerHTML = "Guesses So Far: " + userGuess;
+			var guessesLeft = guessesToStart - userGuess.length;
+			document.getElementById("displayGuessesLeft").innerHTML = "Numbers of Guesses Remaining: " + guessesLeft;
+			}
 
-	console.log(userGuess);
+			else {
+				document.getElementById("displayWins").innerHTML = "Wins " + (wins + 1);
+			}
+	}
 
-	//Computer chooses a-z (at random)
-	var options = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
-	"n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "w", "y", "z"];
+	
 
-	var computerGuess = options[Math.floor(Math.random() * options.length)];
+	//User wins
+	
+	
 
-	console.log(computerGuess);
+	
+	//-----------
 
-		for (i = 0; i < 10; i++) {
-			//Compare the choices: if userGuess does not equal computerGuess 
-			if ((keyPress!=computerGuess)) {
-				var guessesLeft = guessesToStart - userGuess.length;
+	
+		
+		
+		// else {
+		// console.log(userGuess)	
+		// } 	
 
-				document.getElementById("displayGuessesLeft").innerHTML = "Numbers of Guesses Remaining: " + guessesLeft;
-				document.getElementById("displayGuessesSoFar").innerHTML = "Guesses So Far: " + userGuess;
+	// 	for (var i = 0; userGuess[i] < 10; i++) {// if (computerGuess!=userGuess)
+	// }	
+	// 
+
+
+
+	// }
+
+	
+		
+		
+
+		// 
+
+		
 
 			
-			}		
 
-			//Compare the choices: if userGuess equals computerGuess
-			if ((keyPress==computerGuess)) {
-				wins++; 
-				document.getElementById("displayWins").innerHTML = "Wins: " + wins;				
-			}
-		}
-	}
+		// 	else {
+		// 		console.log(userGuess);
+		// 	}
+		// }
+		
+		//Compare the choices: if userGuess does not equal computerGuess 	
+			
+			
+
+		// }		
+
+		// else {
+		
+				
+		// 	}
+	

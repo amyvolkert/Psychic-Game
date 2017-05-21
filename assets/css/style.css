@@ -13,7 +13,20 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	color: #FF8C00;
+	font-family: Inknut Antiqua;
+	text-align: center;
+	border-bottom: solid 2px #4e5d6c;
+}
 #displayWins {
+	color: #FF8C00;
+	font-family: Inknut Antiqua;
+	font-size: 30px;
+	text-align: center;
+}
+
+#displayLosses {
 	color: #FF8C00;
 	font-family: Inknut Antiqua;
 	font-size: 30px;
