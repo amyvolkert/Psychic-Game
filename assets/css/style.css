@@ -1,4 +1,4 @@
-.container {
+.container-float {
 	margin: auto;
 	max-width: 970px;
 }
@@ -10,15 +10,18 @@ body {
 h1 {
 	color: #FF8C00;
 	font-family: Inknut Antiqua;
+	padding-left: 20px;
 	text-align: center;
 }
 
 h2 {
 	color: #FF8C00;
 	font-family: Inknut Antiqua;
-	text-align: center;
+	padding-left: 20px;
+	padding-bottom: 20px;
 	border-bottom: solid 2px #4e5d6c;
 }
+
 #displayWins {
 	color: #FF8C00;
 	font-family: Inknut Antiqua;
