@@ -18,6 +18,7 @@ h2 {
 	color: #FF8C00;
 	font-family: Inknut Antiqua;
 	padding-left: 20px;
+	text-align: center;
 	padding-bottom: 20px;
 	border-bottom: solid 2px #4e5d6c;
 }
@@ -49,5 +50,3 @@ h2 {
 	font-size: 30px;
 	text-align: center;
 }
-
-/*&nsbp */

@@ -25,11 +25,12 @@ var guessesToStart = 9;
 	
 	//User wins
 	else {
-		document.getElementById("displayWins").innerHTML = "Wins " + (wins + 1);
+		document.getElementById("displayWins").innerHTML = "Wins: " + (wins + 1);
 		userGuess = [];
 		guessesLeft = 9;
 	}
 
+	//User looses
 	var losses = 0;
 	if (guessesLeft = 0) {
 		document.getElementById("displayLosses").innerHTML = "Losses: " + (losses + 1)
@@ -38,7 +39,8 @@ var guessesToStart = 9;
 	}
 
 	else {
-		;
+		
+		
 	
 	}
 	}
