@@ -1,52 +1,52 @@
-.container-float {
-	margin: auto;
-	max-width: 970px;
+.container {
+	width: 100%;
+	max-width: 960px;
+ 	margin: 0 auto;
 }
 
 body {
-	background-image: url(../images/FreeVector-Blue-Abstract-Fan_Background.jpg);
+	background: url("../images/candles.jpg");
+	font-family: Arial, Helvetica, sans-serif;
+  	font-size: 26px;
+  	line-height: 34px;
+  	color: 	#F0F8FF;
+  	padding: 20px 20px 0 35px;
 }
 
-h1 {
-	color: #FF8C00;
-	font-family: Inknut Antiqua;
-	padding-left: 20px;
-	text-align: center;
+.title {
+	font-family: "Times New Roman", Times, Serif;
+	font-size: 38px;
+	font-variant: small-caps;
+	color: #808080;
 }
 
-h2 {
-	color: #FF8C00;
-	font-family: Inknut Antiqua;
-	padding-left: 20px;
-	text-align: center;
-	padding-bottom: 20px;
-	border-bottom: solid 2px #4e5d6c;
+.text {
+	line-height: 2;
+	letter-spacing: 1.5px;
+}
+
+.text-instruct {
+	line-height: 2.5;
+	margin-top: 170px;
+	letter-spacing: 1.5px;
+	border-top: solid #808080 1px;
+}
+
+.text-input {
+	font-weight: bold;
+	line-height: 1.75;
+	letter-spacing: 2px;
 }
 
 #displayWins {
-	color: #FF8C00;
-	font-family: Inknut Antiqua;
-	font-size: 30px;
-	text-align: center;
-}
+	margin-top: 0;
+}	
 
-#displayLosses {
-	color: #FF8C00;
-	font-family: Inknut Antiqua;
-	font-size: 30px;
-	text-align: center;
-}
-
-#displayGuessesSoFar {
-	color: #FF8C00;
-	font-family: Inknut Antiqua;
-	font-size: 30px;
-	text-align: center;
-}
-
-#displayGuessesLeft {
-	color: #FF8C00;
-	font-family: Inknut Antiqua;
-	font-size: 30px;
-	text-align: center;
+#si {
+	font-family: Garamond, serif;
+	color: #FFF8DC;
+	font-size: 16px;
+	text-align: right;
+	padding-right: 20px;
+	margin-top: 25px;
 }
