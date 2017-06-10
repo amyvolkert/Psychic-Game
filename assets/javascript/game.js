@@ -13,6 +13,7 @@ $(document).ready(function() {
 	var keyPress;
 	var guessesToStart = 9;
 	var guessesSoFar = 0;
+	var guessesLeft;
 	var wins = 0;
 	var losses = 0;
 
@@ -25,7 +26,7 @@ $(document).ready(function() {
 				if (computerGuess!=keyPress) {
 					var x = document.getElementById("displayGuessesSoFar");
 					x.innerHTML = "Guesses So Far: " + userGuess.join(' ');
-					var guessesLeft = guessesToStart - userGuess.length;
+					guessesLeft = guessesToStart - userGuess.length;
 					document.getElementById("displayGuessesLeft").innerHTML = "Guesses Left: " + guessesLeft;
 				}				
 			
