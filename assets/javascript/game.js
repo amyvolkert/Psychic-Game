@@ -34,23 +34,26 @@ $(document).ready(function() {
 				else {
 					userGuess = [];
 					wins++;
-					guessesLeft = 9;
 					document.getElementById("displayWins").innerHTML = "Wins: " + wins;
-					computerGuess = options[Math.floor(Math.random() * options.length)];
-					userGuess = [];
-					guessesToStart = 9;
-					console.log(computerGuess);
+					reset();
 				}
 
 				//User looses
 				if (guessesLeft <= 0) {
 					losses++;
-					guessesLeft = 9;
 					document.getElementById("displayLosses").innerHTML = "Losses: " + losses;
-					computerGuess = options[Math.floor(Math.random() * options.length)];
-					userGuess = [];
-					guessesToStart = 9;
-					console.log(computerGuess);				
+					reset();
 				}
-		}
-	});
+	//document.onkey up function ends
+	}
+	
+	//reset function 
+	var reset = function() {
+	guessesLeft = 9;
+	computerGuess = options[Math.floor(Math.random() * options.length)];
+	userGuess = [];
+	guessesToStart = 9;
+	console.log(computerGuess);	
+	} 
+//document.ready function ends 
+});
