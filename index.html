@@ -9,51 +9,62 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   </head>
 
 <body>
+  <div class="title-bar">
+    <p class="title">&#9732;&nbsp;Psychic Game</p>
+  </div>
+
   <!-- Grid -->
   <div class="container">
-    <!-- Row 1 of 2 -->
-    <div class="row">
-      <!-- Column 1 of 1 -->
-      <div class="col-xs-12 col-md-12">
-        <p class="title">&#9732;&nbsp;Psychic Game</p>
+  <!-- Row 1 of 1 -->
+  <div class="row">
+    <!-- Column 1 of 2 -->
+    <div class="col-xs-6 col-md-6">
+      <div class="column-one">
+        <!-- Row 1 of 3 -->
+        <div class="row">
+          <p>Type the letter I'm thinking of.</p>
+        </div>
+        <!-- Row 2 of 3 -->
+        <div class="row">
+          <h3>You have 9 attempts.</h3>
+        </div>
+        <!-- Row 3 of 3 -->
+        <div class="row">
+          <img src="assets\images\andrew-areoff-462185.jpg" alt="Letters" id="letters-image">
+        </div>
       </div>
     </div>
 
-    <div class="psychic-game-content">
-      <p>Are you a gifted clairvoyant with precision? Find out now.
-      <br><br>
-      Type the letter I'm thinking of within 9 attempts.
-      </p>
-      <br><br>  <br><br>
+    <!-- Column 2 of 2 -->
+    <div class="col-xs-6 col-md-6">
+      <div class="column-two">
+        <!-- Row 1 of 1 -->
+        <div class="row">
 
+          <div id = "displayGuessesLeft">
+               Guesses Left:
+          </div>
+          <div id = "displayWins">
+               <p>Wins:</p>
+          </div>
 
-
-  <section class = "text-input">
-      <!-- Second row, one column -->
-      <div class = "row">
-        <div class = "col-md-12">
-            <div id = "displayWins">
-                 Wins:
-            </div>
-
-            <div id = "displayLosses">
-                  Losses:
-            </div>
-
-            <div id = "displayGuessesLeft">
-                 Guesses Left:
-            </div>
-
-            <div id = "displayGuessesSoFar">
-                  Guesses So Far:
-            </div>
+          <div id = "displayLosses">
+                Losses:
+          </div>
+          <div id="displayGuessesSoFar">
+            <!-- <p>Guesses So Far:</p> -->
+          </div>
         </div>
-      </div>
-  </section>
 
+
+      </div>
+    </div>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>

@@ -1,33 +1,53 @@
 body {
+	max-width: 960px;
+	background: linear-gradient(#E08B13, white);
+}
 
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 26px;
-	color: 	#F0F8FF;
-
-
-	background: url("../images/spiration dark.png");
+.title-bar {
+	background: #fff;
 }
 
 .title {
 	margin-top: 15px;
-
+	margin-left: 9px;
 	font-family: "Times New Roman", Times, Serif;
 	font-size: 46px;
 	font-variant: small-caps;
-
-	color: #808080;
+	color: #827f7d;
+	background: #fff;
 }
 
-.psychic-game-content {
-	max-width: 100%;
-	margin: 25px 145px 25px 145px;
-	padding: 30px;
-
-	font-family: "Times New Roman", Times, Serif;
-
-	
-
+.container {
+	/* font-family: "PT Sans", sans-serif; */
 }
+
+.column-one {
+	padding-top: 25px;
+	font-size: 28px;
+	font-family: "PT Sans", sans-serif;
+	color: #F0F8FF;
+}
+
+#letters-image {
+	max-width: 350px;
+	margin-top: 6px;
+	border-radius: 8px;
+}
+
+.column-two {
+	/* padding-left: 80px; */
+	/* margin-bottom: 60px; */
+	font-size: 28px;
+	font-family: "PT Sans", sans-serif;
+	font-weight: bold;
+	padding-top: 25px;
+	color: #0E0E13;
+}
+
+#displayGuessesSoFar {
+	padding-top: 100px;
+}
+
 
 .text-input {
 	font-weight: bold;
