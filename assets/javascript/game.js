@@ -22,12 +22,15 @@ $(document).ready(function() {
 			userGuess.push(keyPress);
 			console.log(userGuess);
 
+
+
+
 				//User guess does not equal computer guess
 				if (computerGuess!=keyPress) {
 					var x = document.getElementById("displayGuessesSoFar");
 					x.innerHTML = userGuess.join(' ');
 					guessesLeft = guessesToStart - userGuess.length;
-					document.getElementById("displayGuessesLeft").innerHTML = "Guesses Left: " + guessesLeft;
+					document.getElementById("displayGuessesLeft").innerHTML = guessesLeft + " Guesses Left";
 				}
 
 				//User wins

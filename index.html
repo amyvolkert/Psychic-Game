@@ -27,11 +27,11 @@
       <div class="column-one">
         <!-- Row 1 of 3 -->
         <div class="row">
-          <p>Type the letter I'm thinking of.</p>
+          <h1>Type the letter I'm thinking of.</h1>
         </div>
         <!-- Row 2 of 3 -->
         <div class="row">
-          <h3>You have 9 attempts.</h3>
+          <h2>You have 9 attempts.</h2>
         </div>
         <!-- Row 3 of 3 -->
         <div class="row">
@@ -43,25 +43,24 @@
     <!-- Column 2 of 2 -->
     <div class="col-xs-6 col-md-6">
       <div class="column-two">
-        <!-- Row 1 of 1 -->
-        <div class="row">
-
-          <div id = "displayGuessesLeft">
-               Guesses Left:
+        <section class="text-input">
+          <!-- Row 1 of 3 -->
+          <div class="row">
+            <div id="displayGuessesSoFar"><span class="blinking-cursor">|</span></div>
           </div>
-          <div id = "displayWins">
-               <p>Wins:</p>
+          <!-- Row 2 of 3 -->
+          <div class="row">
+            <div id="displayGuessesLeft">9 Guesses Left</div>
+          </div>
+          <!-- Row 3 of 3 -->
+          <div class="row">
+            <div class="text-guesses">
+              <div id="displayWins">Wins: </div>
+              <div id="displayLosses">Losses: </div>
+            </div>
           </div>
 
-          <div id = "displayLosses">
-                Losses:
-          </div>
-          <div id="displayGuessesSoFar">
-            <!-- <p>Guesses So Far:</p> -->
-          </div>
-        </div>
-
-
+        </section>
       </div>
     </div>
   </div>
