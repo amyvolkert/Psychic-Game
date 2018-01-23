@@ -13,12 +13,13 @@ body {
 	font-family: "Times New Roman", Times, Serif;
 	font-size: 46px;
 	font-variant: small-caps;
-	color: #827f7d;
+	color: #787878;
 	background: #fff;
 }
 
 .container {
 	padding-top: 25px;
+	margin-left: 150px;
 	font-family: "PT Sans", sans-serif;
 	color: #F0F8FF;
 }
@@ -31,7 +32,7 @@ body {
 
 .column-two {
 	margin-top: 150px;
-	padding-left: 50px;
+	margin-left: 2px;
 	/* border-left: 1px solid #000;height: 400px; */
 }
 
@@ -47,19 +48,6 @@ body {
 #displayGuessesSoFar {
 	font-size: 36px;
 	font-weight: bold;
-}
-
-#displayGuessesLeft {
-	font-size: 30px;
-	padding-top: 11px;
-}
-
-.text-guesses {
-	margin-top: 50px;
-	color: #5f44e6;
-	font-weight: bold;
-	font-variant: small-caps;
-	font-size: 36px;
 }
 
 .blinking-cursor {
@@ -118,6 +106,20 @@ body {
   }
 }
 
+#displayGuessesLeft {
+	font-size: 30px;
+	padding-top: 11px;
+}
+
+.text-guesses {
+	margin-top: 50px;
+	color: #e5743b;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 36px;
+}
+
+/*Media query for screens 992px to 1199px*/
 @media only screen and (max-width: 1200px) {
 	#letters-image {
 		max-width: 400px;
@@ -127,10 +129,10 @@ body {
 
 	.column-two {
 		margin-top: 120px;
-		padding-left: 30px;
+		margin-left: 20px;
 	}
 }
-
+/*Media query for screens 768px to 991px*/
 @media only screen and (max-width: 992px) {
 	h1 {
 		font-size: 29px;
@@ -148,7 +150,7 @@ body {
 
 	.column-two {
 		margin-top: 120px;
-		padding-left: 50px;
+		margin-left: 75px;
 	}
 
 	#displayGuessesSoFar {
@@ -163,7 +165,6 @@ body {
 
 	.text-guesses {
 		margin-top: 20px;
-		color: #5f44e6;
 		font-weight: bold;
 		font-variant: small-caps;
 		font-size: 29px;
@@ -172,6 +173,64 @@ body {
 	.blinking-cursor {
 	  font-weight: 100;
 	  font-size: 30px;
+	  color: #2E3D48;
+	  -webkit-animation: 1s blink step-end infinite;
+	  -moz-animation: 1s blink step-end infinite;
+	  -ms-animation: 1s blink step-end infinite;
+	  -o-animation: 1s blink step-end infinite;
+	  animation: 1s blink step-end infinite;
+	}
+}
+
+/*Media query for screens less than 768px*/
+@media only screen and (max-width: 768px) {
+	h1 {
+		font-size: 23px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	#letters-image {
+		max-width: 290px;
+		margin-top: 9px;
+		border-radius: 8px;
+	}
+
+	.column-two {
+		margin-top: 80px;
+		margin-left: 75px;
+	}
+
+	.text-input {
+		padding-top: 29px;
+	}
+
+	#displayGuessesSoFar {
+		font-size: 23px;
+		font-weight: bold;
+	}
+
+	#displayGuessesLeft {
+		padding-top: 0px !important;
+		font-size: 20px;
+	}
+
+	#displayLosses {
+		margin-top: -5px;
+	}
+
+	.text-guesses {
+		margin-top: 0px !important;
+		font-weight: bold;
+		font-variant: small-caps;
+		font-size: 23px;
+	}
+
+	.blinking-cursor {
+	  font-weight: 100;
+	  font-size: 23px;
 	  color: #2E3D48;
 	  -webkit-animation: 1s blink step-end infinite;
 	  -moz-animation: 1s blink step-end infinite;
