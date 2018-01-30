@@ -9,11 +9,15 @@ body {
 
 .title {
 	margin-top: 15px;
-	margin-left: 9px;
+	margin-left: 11px;
 	font-family: "Times New Roman", Times, Serif;
-	font-size: 44px;
+	font-size: 42px;
 	font-variant: small-caps;
 	color: #787878;
+}
+
+.container {
+	max-width: 720px;
 }
 
 #displayGuessesSoFar {
@@ -94,8 +98,6 @@ body {
 /* Landscape phones */
 @media (max-width: 767.98px) {
 	.title {
-		/* margin-top: 15px;
-		margin-left: 9px; */
 		font-family: "Times New Roman", Times, Serif;
 		font-size: 36px;
 		font-variant: small-caps;
@@ -103,7 +105,7 @@ body {
 	}
 
 	h4 {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	#displayGuessesSoFar {
@@ -169,7 +171,7 @@ body {
 	}
 
 	#displayGuessesLeft {
-		font-size: 20px;
+		font-size: 17px;
 		padding-top: 34px;
 	}
 
@@ -178,13 +180,95 @@ body {
 		color: #e5743b;
 		font-weight: bold;
 		font-variant: small-caps;
-		font-size: 26px;
+		font-size: 24px;
 	}
 }
 
 /* Portrait phones */
 @media (max-width: 575.98px) {
+	.title {
+		font-family: "Times New Roman", Times, Serif;
+		font-size: 36px;
+		font-variant: small-caps;
+		color: #787878;
+	}
+
 	h4 {
-		font-size: 18px;
+		font-size: 17px;
+	}
+
+	#displayGuessesSoFar {
+		font-size: 20px;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	.blinking-cursor {
+	  font-weight: 100;
+	  font-size: 20px;
+	  color: #2E3D48;
+	  -webkit-animation: 1s blink step-end infinite;
+	  -moz-animation: 1s blink step-end infinite;
+	  -ms-animation: 1s blink step-end infinite;
+	  -o-animation: 1s blink step-end infinite;
+	  animation: 1s blink step-end infinite;
+	}
+
+	@keyframes "blink" {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: black;
+	  }
+	}
+
+	@-moz-keyframes blink {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: black;
+	  }
+	}
+
+	@-webkit-keyframes "blink" {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: black;
+	  }
+	}
+
+	@-ms-keyframes "blink" {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: black;
+	  }
+	}
+
+	@-o-keyframes "blink" {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: black;
+	  }
+	}
+
+	#displayGuessesLeft {
+		font-size: 17px;
+		padding-top: 34px;
+	}
+
+	.wins-loses {
+		margin-top: 40px;
+		color: #e5743b;
+		font-weight: bold;
+		font-variant: small-caps;
+		font-size: 22px;
 	}
 }
