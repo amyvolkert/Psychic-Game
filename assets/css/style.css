@@ -11,48 +11,20 @@ body {
 	margin-top: 15px;
 	margin-left: 9px;
 	font-family: "Times New Roman", Times, Serif;
-	font-size: 46px;
+	font-size: 44px;
 	font-variant: small-caps;
 	color: #787878;
-	background: #fff;
-}
-
-.container {
-	padding-top: 25px;
-	margin-left: 150px;
-	font-family: "PT Sans", sans-serif;
-	color: #F0F8FF;
-}
-
-#letters-image {
-	max-width: 525px;
-	margin-top: 9px;
-	border-radius: 8px;
-}
-
-.column-two {
-	margin-top: 150px;
-	margin-left: 2px;
-	/* border-left: 1px solid #000;height: 400px; */
-}
-
-.text-input {
-	/* padding-top: 14px; */
-	line-height: 175%;
-	color: black;
-	/* font-weight: bold; */
-	font-size: 30px;
-	letter-spacing: 1px;
 }
 
 #displayGuessesSoFar {
-	font-size: 36px;
+	font-size: 28px;
 	font-weight: bold;
+	font-style: italic;
 }
 
 .blinking-cursor {
   font-weight: 100;
-  font-size: 30px;
+  font-size: 28px;
   color: #2E3D48;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
@@ -107,135 +79,23 @@ body {
 }
 
 #displayGuessesLeft {
-	font-size: 30px;
-	padding-top: 11px;
+	font-size: 24px;
+	padding-top: 34px;
 }
 
-.text-guesses {
-	margin-top: 50px;
+.wins-loses {
+	margin-top: 45px;
 	color: #e5743b;
 	font-weight: bold;
 	font-variant: small-caps;
-	font-size: 36px;
+	font-size: 30px;
 }
 
-/*Media query for screens 992px to 1199px*/
-@media only screen and (max-width: 1200px) {
-	#letters-image {
-		max-width: 400px;
-		margin-top: 9px;
-		border-radius: 8px;
-	}
-
-	.column-two {
-		margin-top: 120px;
-		margin-left: 20px;
-	}
-}
-/*Media query for screens 768px to 991px*/
-@media only screen and (max-width: 992px) {
-	h1 {
-		font-size: 29px;
-	}
-
-	h2 {
-		font-size: 26px;
-	}
-
-	#letters-image {
-		max-width: 400px;
-		margin-top: 9px;
-		border-radius: 8px;
-	}
-
-	.column-two {
-		margin-top: 120px;
-		margin-left: 75px;
-	}
-
-	#displayGuessesSoFar {
-		font-size: 29px;
-		font-weight: bold;
-	}
-
-	#displayGuessesLeft {
-		font-size: 26px;
-		padding-top: 11px;
-	}
-
-	.text-guesses {
-		margin-top: 20px;
-		font-weight: bold;
-		font-variant: small-caps;
-		font-size: 29px;
-	}
-
-	.blinking-cursor {
-	  font-weight: 100;
-	  font-size: 30px;
-	  color: #2E3D48;
-	  -webkit-animation: 1s blink step-end infinite;
-	  -moz-animation: 1s blink step-end infinite;
-	  -ms-animation: 1s blink step-end infinite;
-	  -o-animation: 1s blink step-end infinite;
-	  animation: 1s blink step-end infinite;
-	}
-}
-
-/*Media query for screens less than 768px*/
-@media only screen and (max-width: 768px) {
-	h1 {
-		font-size: 23px;
-	}
-
-	h2 {
-		font-size: 20px;
-	}
-
-	#letters-image {
-		max-width: 290px;
-		margin-top: 9px;
-		border-radius: 8px;
-	}
-
-	.column-two {
-		margin-top: 80px;
-		margin-left: 75px;
-	}
-
-	.text-input {
-		padding-top: 29px;
-	}
-
-	#displayGuessesSoFar {
-		font-size: 23px;
-		font-weight: bold;
-	}
-
-	#displayGuessesLeft {
-		padding-top: 0px !important;
-		font-size: 20px;
-	}
-
-	#displayLosses {
-		margin-top: -5px;
-	}
-
-	.text-guesses {
-		margin-top: 0px !important;
-		font-weight: bold;
-		font-variant: small-caps;
-		font-size: 23px;
-	}
-
-	.blinking-cursor {
-	  font-weight: 100;
-	  font-size: 23px;
-	  color: #2E3D48;
-	  -webkit-animation: 1s blink step-end infinite;
-	  -moz-animation: 1s blink step-end infinite;
-	  -ms-animation: 1s blink step-end infinite;
-	  -o-animation: 1s blink step-end infinite;
-	  animation: 1s blink step-end infinite;
-	}
+@media screen and (min-width: 480px) {
+    /* body {
+        background-color: lightgreen;
+    } */
+		.title-bar {
+			/* background: black; */
+		}
 }
