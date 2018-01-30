@@ -24,9 +24,7 @@ $(document).ready(function() {
 		keyPress = String.fromCharCode(event.keyCode).toLowerCase();
 		userGuess.push(keyPress);
 		console.log(userGuess);
-			//User does not choose a letter
-			// if (keyPress!=letter)
-
+			//*User does not choose a letter*
 			//User guess does not equal computer guess
 			if (computerGuess!=keyPress) {
 				var x = document.getElementById("displayGuessesSoFar");

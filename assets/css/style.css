@@ -91,11 +91,100 @@ body {
 	font-size: 30px;
 }
 
-@media screen and (min-width: 480px) {
-    /* body {
-        background-color: lightgreen;
-    } */
-		.title-bar {
-			/* background: black; */
-		}
+/* Landscape phones */
+@media (max-width: 767.98px) {
+	.title {
+		/* margin-top: 15px;
+		margin-left: 9px; */
+		font-family: "Times New Roman", Times, Serif;
+		font-size: 36px;
+		font-variant: small-caps;
+		color: #787878;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	#displayGuessesSoFar {
+		font-size: 20px;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	.blinking-cursor {
+	  font-weight: 100;
+	  font-size: 20px;
+	  color: #2E3D48;
+	  -webkit-animation: 1s blink step-end infinite;
+	  -moz-animation: 1s blink step-end infinite;
+	  -ms-animation: 1s blink step-end infinite;
+	  -o-animation: 1s blink step-end infinite;
+	  animation: 1s blink step-end infinite;
+	}
+
+	@keyframes "blink" {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: black;
+	  }
+	}
+
+	@-moz-keyframes blink {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: black;
+	  }
+	}
+
+	@-webkit-keyframes "blink" {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: black;
+	  }
+	}
+
+	@-ms-keyframes "blink" {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: black;
+	  }
+	}
+
+	@-o-keyframes "blink" {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: black;
+	  }
+	}
+
+	#displayGuessesLeft {
+		font-size: 20px;
+		padding-top: 34px;
+	}
+
+	.wins-loses {
+		margin-top: 45px;
+		color: #e5743b;
+		font-weight: bold;
+		font-variant: small-caps;
+		font-size: 26px;
+	}
+}
+
+/* Portrait phones */
+@media (max-width: 575.98px) {
+	h4 {
+		font-size: 18px;
+	}
 }
