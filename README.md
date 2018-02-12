@@ -11,7 +11,8 @@ None
 * JavaScript
 
 ## Next Steps
-Add an ```if...else``` statement that prompts users to type a letter when they type a number or symbol.
+* Add an ```if...else``` statement that prompts users to type a letter when they type a number or symbol.
+* Add a link to README.md in index.html.
 
 ## Authors
 Author: Amy Volkert
