@@ -1,5 +1,5 @@
 # Psychic-Game
-The purpose of this application is to allow users to guess the letter the computer has chosen at random. The application is mobile responsive.
+A simple application that allows users to guess the letter the computer has chosen at random. The application is mobile responsive.
 
 ## Prerequisites
 None
